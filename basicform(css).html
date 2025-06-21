@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00695c;
+        }
+
+        .form-box {
+            background-color: #fff;
+            width: 350px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #009688;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            margin: 8px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            width: 100px;
+            height: 40px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #388e3c;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    <div class="form-box">
+        <form>
+            <label>Full Name:</label>
+            <input type="text" required>
+
+            <label>Birth Date:</label>
+            <input type="date" required>
+
+            <label>Age:</label>
+            <input type="number" required>
+
+            <label>Address:</label>
+            <textarea rows="3" required></textarea>
+
+            <label>City:</label>
+            <input type="text" required>
+
+            <label>State:</label>
+            <input type="text" required>
+
+            <label>Pincode:</label>
+            <input type="number" required>
+
+            <label>Country:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+
+            <br><br>
+            <input type="checkbox" required> I agree to the terms
+
+            <div class="buttons">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
